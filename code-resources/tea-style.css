@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px red solid;*/
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 69px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+}
+
+header .logo {
+    height: 50px;
+    display: inline-flex;
+    position: absolute;
+    left: 10px;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+nav li {
+    display: inline;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+nav li a {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    top: 69px;
+}
+
+.text {
+    margin-top: 20px;
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+.text h2 {
+    margin-top: 10px;
+}
+
+.text h4 {
+    margin: 5px;
+}
+
+#mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 1200px;
+    background-image: url(../resouces/img-mission-background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 20px;
+}
+
+
+#tea-month {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 1000px;
+    margin: 20px 0;
+}
+
+.tea {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#tea-month img {
+    width: 300px;
+    height: 200px;
+}
+
+#tea-month span {
+    margin: 10px auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#locations {
+    height: 500px;
+    width: 1200px;
+    display: block;
+    background-image: url(../resouces/img-locations-background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-top: 40px;
+}
+
+#locations .text {
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 15px;
+}
+
+.location {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: black;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    top: 80px;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
+    height: 200px;
+}
+
+.contact {
+    text-align: center;
+    line-height: 2;
+}
+
+.copyright {
+    display: block;
+    margin: 25px 20px;
+    text-align: left;       
+}
